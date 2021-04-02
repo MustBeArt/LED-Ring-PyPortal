@@ -161,7 +161,7 @@ while True:
                     brightness = button.name
                     lightring.brightness = brightnesses[brightness]
                     update_ptr(brightness, ptr_color)
-                    pyportal.play_file(sounds[button.name])
+                pyportal.play_file(sounds[button.name])
                 break
         while pyportal.touchscreen.touch_point:
             pass
